@@ -1,0 +1,3 @@
+number = ("Enter a number: ")
+
+
