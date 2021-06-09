@@ -12,7 +12,7 @@ while guess !=rand_num:
     guess = int(input("Guess the random number between 1 to 5: "))
     
 else:
-        print("Yea! You've guess the random number of ", rand_num,"!", sep="")
+        print("Congratulations! You've guess the random number of ", rand_num,"!", sep="")
                
 
         
