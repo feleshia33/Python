@@ -2,8 +2,8 @@
 
 from random import randrange
 
-#rand_num = (randrange(6))
-rand_num = 5
+rand_num = (randrange(6))
+
 guess = int(input("Guess the random number between1 to 5: "))
 
 
@@ -13,5 +13,6 @@ while guess !=rand_num:
     
 else:
         print("Yea! You've guess the random number of ", rand_num,"!", sep="")
+               
 
         
