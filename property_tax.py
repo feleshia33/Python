@@ -15,3 +15,11 @@ while lot !=0:
 
     # Calculate the property's tax.
     tax = value * TAX_FACTOR
+
+    #Display the tax.
+    print("Property tax: $", format(tax, ',.2f'), sep = "")
+
+    #Get the next lot number.
+    print("Enter the next lot number or ")
+    print("enter 0 to end.")
+    lot = int(input("Lot number: "))
