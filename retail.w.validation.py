@@ -1,6 +1,6 @@
 # This program calculates retail prices.
 
-MARK_UP = 2.5
+MARK_UP = 4.0
 another = 'y'
 
 #Process one or more items.
