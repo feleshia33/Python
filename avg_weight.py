@@ -6,6 +6,8 @@ week = int(input("Enter the number of weeks: "))
 
 # Get the number of weigh-ins
 weigh_ins = int(input("Enter the number of weigh ins: "))
+goal_weight = int(input("What is your goal weight? "))
+
 
 # Determine average from weigh-ins
 
@@ -25,8 +27,10 @@ for weigh in range(week):
     print()
 
     # Display average
-    print("The average for client number", weigh + 1,
-          "is: ", average)
-
+    print("The average weigh for client number", weigh + 1,
+          "is: ", average, "compared to your goal weight of ", goal_weight, ".")
     print()
+    
+
+    
     
