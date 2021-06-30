@@ -11,6 +11,11 @@ for num in range(num_expense):
     total = total + number
 
 
-print(total)
+print("Your total expenses are", total)
+
+if total > budget:
+    print("You are over budget by", total - budget)
+else:
+    print("You are under budget by", budget - total)
     
     
