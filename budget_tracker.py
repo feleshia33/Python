@@ -8,15 +8,16 @@ total = 0.0
 
 for num in range(num_expense):
     print("Expense", num + 1, end="")
-    number = int(input(":$"))
+    number = int(input(":$ "))
     total = total + number
+print("--")
 
 
-print("Your total expenses for the month is", format(total, ",.2f"),".", end="")
+print("Your total expenses for the month is $ ", format(total, ",.2f"),".", end="", sep="")
 
 if total > budget:
-    print("You are over budget by", format(total - budget, ",.2f"), ".")
+    print(" You are over budget by ", format(total - budget, ",.2f"), ".", sep="")
 else:
-    print("You are under budget by", format(budget - total,",.2f"), ".")
+    print(" Congratulations! You are under budget by $ ", format(budget - total,",.2f"), ".", sep="")
     
     
