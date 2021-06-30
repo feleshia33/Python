@@ -4,10 +4,13 @@
 
 budget = int(input("Enter your monthly budget amount: "))
 num_expense = int(input("Enter the number of expenses for the month: "))
-total_expense = 0
+total = 0.0
 
-while total_expense < num_expense:
-    print("text")
-    total_expense = num_expense
+for num in range(num_expense):
+    number = int(input("Expense: "))
+    total = total + number
+
+
+print(total)
     
     
