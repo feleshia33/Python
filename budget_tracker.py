@@ -15,7 +15,7 @@ for num in range(num_expense):
     print("Expense", num + 1, end="")
     number = int(input(": $ "))
     total += number
-print("--")
+print("-----")
 
 
 print("Your total expenses for the month is $", format(total, ",.2f"),".", end="", sep="")
