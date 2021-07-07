@@ -6,6 +6,7 @@ wn = turtle.Screen()
 wn.title("Ping Pong")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
+
 # Stops window from updating, speeds game
 wn.tracer()
 
@@ -28,13 +29,14 @@ paddle_b.penup()
 paddle_b.goto(350, 0)
 
 # Ball
-
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape("square")
 ball.color("white")
 ball.penup()
 ball.goto(0, 0)
+ball.dx = 2
+ball.dy = -2
 
 # Function
 def paddle_a_up():
@@ -66,9 +68,28 @@ wn.onkeypress(paddle_b_up, "p")
 wn.onkeypress(paddle_b_down, "l")
 
 
-
-
-
 # Main loop
 while True:
     wn.update()
+
+    #Move the ball
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+
+    #Border check
+    if ball.ycor() > 290:
+        ball.sety(290)
+        ball.dy *= -1
+
+    if ball.ycor() < -290:
+        ball.sety(-290)
+        ball.dy *= -1
+
+    if ball.xcor() > 390:
+        ball.setx(390)
+        ball.dx *= -1
+
+    if ball.xcor() < -390:
+        ball.setx(-390)
+        ball.dx *= -1
+    
