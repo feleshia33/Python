@@ -61,5 +61,8 @@ else:
     print("sorry, that is not correct.")
     print()
     
-
-print("Your total score is:", counter, "out of 5.")
+if counter >= 5:
+    print("Congrats! Your total score is:", counter, "out of 5.")
+else:
+    print("Your total score is:", counter, "out of 5.")
+    
