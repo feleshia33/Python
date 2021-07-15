@@ -1,7 +1,5 @@
 # The following is used as a global constant
 # the contribution rate.
-
-
 CONTRIBUTION_RATE = 0.05
 
 def main():
@@ -10,3 +8,15 @@ def main():
     show_pay_contrib(gross_pay)
     show_bonus_contrib(bonus)
 
+# The show_pay_contrib function accepts the gross pay
+# as an agrument and displays the retirement
+# contribution for hte total amount of pay.
+
+def show_pay_contrib(gross):
+    contrib = gross * CONTRIBUTION_RATE
+    print("Contribution for gross pay: $", format(contrib, ".2f"), sep="")
+
+
+
+
+main()
