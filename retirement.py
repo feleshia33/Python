@@ -14,11 +14,12 @@ def main():
 
 def show_pay(gross):
     contrib = gross * CONTRIBUTION_RATE
-    print("Contribution for gross pay: $", format(contrib, ".2f"), sep="")
+    print("Contribution for gross pay: $", format(contrib, ",.2f"), sep="")
 
 
 def show_bonus(bonus):
-    print("Contribution for bonuses: $", format(contrib, ".2f"), sep="")
+    contrib = bonus * CONTRIBUTION_RATE
+    print("Contribution for bonuses: $", format(contrib, ",.2f"), sep="")
 
 
 main()
