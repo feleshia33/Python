@@ -5,7 +5,7 @@ def main():
     first_age = int(input("Enter your age: "))
 
     #Get the user's best friend's age
-    seconf_age = int(input("Enter your friend's age: "))
+    second_age = int(input("Enter your friend's age: "))
 
     #Get the sum of both ages
     total = sum(first_age, second_age)
