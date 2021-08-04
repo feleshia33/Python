@@ -20,4 +20,15 @@ def main():
     #Determine whether the pay is negative
     if pay < 0:
         print("The Salesperson must reimburse the company.")
+
+
+# The get_sales function gets a saleperson's monthly
+# sales from the user and retuns the value
+
+def get_sales():
+    #Get the amount of monthly sales.
+    monthly_sales = float(input("Enter the monthly sales: "))
+
+    #Return the amount entered.
+    return monthly_sales
         
