@@ -17,7 +17,7 @@ def main():
     #Display the amount of pay.
     print("The pay is $', format(pay, ',.2f')", sep=" ")
 
-    #Determine whether the pay is negative
+    #Determine whether the pay is negative.
     if pay < 0:
         print("The Salesperson must reimburse the company.")
 
@@ -31,4 +31,18 @@ def get_sales():
 
     #Return the amount entered.
     return monthly_sales
+
+# The get_advanced_pay function gets the amount of advanced
+# pay given to the salesperson and returns that amount
+
+def get_advanced_pay():
+    #Get the amount of advanced pay.
+    print("Enter the amount of advanced pay, or")
+    print("enter 0 if no advanced pay was given.")
+    advanced = float(input("Advanced pay: "))
+
+    #Return the amount entered.
+    return advanced
+
+
         
