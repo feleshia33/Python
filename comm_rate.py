@@ -15,7 +15,7 @@ def main():
     pay = sales * comm_rate - advanced_pay
 
     #Display the amount of pay.
-    print("The pay is $', format(pay, ',.2f')", sep=" ")
+    print("The pay is $", format(pay, ',.2f'), sep=" ")
 
     #Determine whether the pay is negative.
     if pay < 0:
