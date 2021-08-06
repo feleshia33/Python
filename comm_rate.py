@@ -27,7 +27,7 @@ def main():
 
 def get_sales():
     #Get the amount of monthly sales.
-    monthly_sales = float(input("Enter the monthly sales: "))
+    monthly_sales = int(input("Enter the monthly sales: "))
 
     #Return the amount entered.
     return monthly_sales
@@ -39,7 +39,7 @@ def get_advanced_pay():
     #Get the amount of advanced pay.
     print("Enter the amount of advanced pay, or")
     print("enter 0 if no advanced pay was given.")
-    advanced = float(input("Advanced pay: "))
+    advanced = int(input("Advanced pay: "))
 
     #Return the amount entered.
     return advanced
