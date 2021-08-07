@@ -12,10 +12,10 @@ def main():
     comm_rate = determine_comm_rate(sales)
 
     #Calculate the pay.
-    pay = sales * comm_rate - advanced_pay
-
+    pay = (sales * comm_rate) - advanced_pay
+ 
     #Display the amount of pay.
-    print("The pay is $", format(pay, ',.2f'), sep=" ")
+    print("The pay is $", format(pay, ',.2f'), sep="")
 
     #Determine whether the pay is negative.
     if pay < 0:
@@ -27,7 +27,7 @@ def main():
 
 def get_sales():
     #Get the amount of monthly sales.
-    monthly_sales = int(input("Enter the monthly sales: "))
+    monthly_sales = float(input("Enter the monthly sales: "))
 
     #Return the amount entered.
     return monthly_sales
@@ -39,7 +39,7 @@ def get_advanced_pay():
     #Get the amount of advanced pay.
     print("Enter the amount of advanced pay, or")
     print("enter 0 if no advanced pay was given.")
-    advanced = int(input("Advanced pay: "))
+    advanced = float(input("Advanced pay: "))
 
     #Return the amount entered.
     return advanced
@@ -55,7 +55,7 @@ def determine_comm_rate(sales):
         rate = 0.12
     elif sales >= 15000 and sales <= 17999.99:
         rate = 0.14
-    elif sales >=18000 and sales <= 21999.99:
+    elif sales >= 18000 and sales <= 21999.99:
         rate = 0.16
     else:
         rate = 0.18
