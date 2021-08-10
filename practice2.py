@@ -1,18 +1,19 @@
-# This program Ask the user for a number.
-# Depending on whether the number is even or odd,
-# print out an appropriate message.
+print("This program Ask the user for a number.")
+print("Depending on whether the number is even or odd,")
+print("and print out an appropriate message.")
+print()
 
-#number = int(input("Enter a number from 1 to 1000: "))
-#even = number % 2
+number = int(input("Enter a number from 1 to 1000: "))
+even = number % 2
 
-#if even == 0:
-#    print(number, "is a even nnumber")
-#else:
-#    print(number, "is a odd nnumber")
+if even == 0:
+    print(number, "is a even nnumber")
+else:
+    print(number, "is a odd nnumber")
 
-
-# This program calcuates the length of a right triangle's
-# hypotenuse
+print("================================")
+print()
+print("This program calcuates the length of a right triangle's hypotenuse.")
 
 import math
 
