@@ -24,8 +24,8 @@ def main():
         # Display the names that were entereed
         print("Here are the names you entered.")
 
-        for name in name_list:
-            print(name)
+        for n in name_list:
+            print(n)
 
 # Call the function
 main()
