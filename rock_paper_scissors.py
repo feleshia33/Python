@@ -31,8 +31,15 @@ while True:
         player = input("That is not a valid player, try again: ")
         print("")
 
-opponent = ["Rock", "Paper", "Scissors"]
-print(random.choice(opponent))
+computer = ["Rock", "Paper", "Scissors"]
+computer_choice = (random.choice(computer))
+
+print("Computer chose:", computer_choice)
+
+
+
+
+
 
 
 
