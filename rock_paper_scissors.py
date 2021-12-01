@@ -29,7 +29,7 @@ while True:
         print("")
         break
     else:
-        player = input("That is not a valid player, try again: ")
+        player = input("That is an invalid choice, try again: ")
         print("")
 
 
@@ -37,7 +37,7 @@ while True:
 computer = ["Rock", "Paper", "Scissors"]
 computer_choice = (random.choice(computer)).lower()
 
-print("Computer has choosen:" + computer_choice + "!")
+print("Computer has choosen: " + computer_choice + "!")
 print("")
 
 again = "Y"
@@ -46,28 +46,30 @@ again = "Y"
 
 if computer_choice == player:
     print("It's a tie!")
-    
 elif computer_choice == "rock": 
     if player == "paper":
         print("You win!")
-        
+elif computer_choice == "paper": 
+    if player == "rock":
+        print("You win!")
+elif computer_choice == "rock": 
+    if player == "scissors":
+        print("You lose!")
 elif computer_choice == "paper": 
     if player == "scissors":
-        print("You win!")
-        
+        print("You win!")  
 elif computer_choice == "scissors":
     if player == "rock":
-        print("You win")
-       
+        print("You win")    
+elif computer_choice == "rock":
+    if player == "scissors":
+        print("You lose")
+elif computer_choice == "paper":
+    if player == "scissors":
+        print("You win")    
 else: 
     print("You lose!")
     again = input("Play again, enter 'Y' for yes or 'N' for no")
-        
-   
-    
-
-
-
 
 
 
