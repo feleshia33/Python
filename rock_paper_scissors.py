@@ -1,3 +1,5 @@
+import random
+
 # Display instructions
 print("")
 print("The rules of the game is below:")
@@ -14,18 +16,23 @@ print("")
 # Determine player
 while True:
     if player == "1" or player == "Rock" or player == "rock":
-        print("You have selected Rock")
+        print("You have selected Rock!")
         print("")
         break
     elif player == "2" or player == "Paper" or player == "paper":
-        print("You have selected Paper")
+        print("You have selected Paper!")
         print("")
         break
     elif player == "3" or player == "Scissors" or player == "scissors":
-        print("You have selected Scissors")
+        print("You have selected Scissors!")
         print("")
         break
     else:
         player = input("That is not a valid player, try again: ")
         print("")
-        
+
+opponent = ["Rock", "Paper", "Scissors"]
+print(random.choice(opponent))
+
+
+
