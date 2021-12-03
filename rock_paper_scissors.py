@@ -49,24 +49,18 @@ if computer_choice == player:
 elif computer_choice == "rock": 
     if player == "paper":
         print("You win!")
-elif computer_choice == "paper": 
-    if player == "rock":
+    else: 
+        print("You lose") 
+elif computer_choice == "scissors": 
+    if player == "paper":
         print("You win!")
-elif computer_choice == "rock": 
-    if player == "scissors":
-        print("You lose!")
+    else: 
+        print("You lose") 
 elif computer_choice == "paper": 
-    if player == "scissors":
-        print("You win!")  
-elif computer_choice == "scissors":
-    if player == "rock":
-        print("You win")    
-elif computer_choice == "rock":
-    if player == "scissors":
-        print("You lose")
-elif computer_choice == "paper":
-    if player == "scissors":
-        print("You win")    
+    if player == "paper":
+        print("You win!")
+    else: 
+        print("You lose")   
 else: 
     print("You lose!")
     again = input("Play again, enter 'Y' for yes or 'N' for no")
