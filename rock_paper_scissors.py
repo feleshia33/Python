@@ -43,27 +43,27 @@ print("")
 again = "Y"
 
 # Determine winner
-
-if computer_choice == player:
-    print("It's a tie!")
-elif computer_choice == "rock": 
-    if player == "paper":
-        print("You win!")
+while True:
+    if computer_choice == player:
+        print("It's a tie!")
+    elif computer_choice == "rock": 
+        if player == "paper":
+            print("You win!")
+        else: 
+            print("You lose") 
+    elif computer_choice == "scissors": 
+        if player == "paper":
+            print("You win!")
+        else: 
+            print("You lose") 
+    elif computer_choice == "paper": 
+        if player == "paper":
+            print("You win!")
+        else: 
+            print("You lose")   
     else: 
-        print("You lose") 
-elif computer_choice == "scissors": 
-    if player == "paper":
-        print("You win!")
-    else: 
-        print("You lose") 
-elif computer_choice == "paper": 
-    if player == "paper":
-        print("You win!")
-    else: 
-        print("You lose")   
-else: 
-    print("You lose!")
-    again = input("Play again, enter 'Y' for yes or 'N' for no")
+        print("You lose!")
+    again = input("Play again, enter 'Y' for yes or 'N' for no) ")
 
 
 
