@@ -33,17 +33,16 @@ while True:
         print("")
 
 
-# Computer choice
-computer = ["Rock", "Paper", "Scissors"]
-computer_choice = (random.choice(computer)).lower()
+    # Computer choice
+    computer = ["Rock", "Paper", "Scissors"]
+    computer_choice = (random.choice(computer)).lower()
 
-print("Computer has choosen: " + computer_choice + "!")
-print("")
+    print("Computer has choosen: " + computer_choice + "!")
+    print("")
 
-again = "Y"
+    again = "Y"
 
 # Determine winner
-while True:
     if computer_choice == player:
         print("It's a tie!")
     elif computer_choice == "rock": 
@@ -51,19 +50,20 @@ while True:
             print("You win!")
         else: 
             print("You lose") 
-    elif computer_choice == "scissors": 
-        if player == "paper":
+    elif computer_choice == "paper": 
+        if player == "scissors":
             print("You win!")
         else: 
             print("You lose") 
-    elif computer_choice == "paper": 
-        if player == "paper":
+    elif computer_choice == "scissors": 
+        if player == "rock":
             print("You win!")
         else: 
             print("You lose")   
-    else: 
-        print("You lose!")
-    again = input("Play again, enter 'Y' for yes or 'N' for no) ")
+
+again = input("Play again? (Y/N): ")
+if again.lower() != "y":
+    break
 
 
 
