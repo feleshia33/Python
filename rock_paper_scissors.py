@@ -32,8 +32,9 @@ while True:
     else:
         player = input("That is an invalid choice, try again: ")
         print("")
+        
 
-
+while True:
     # Computer choice
     computer = ["Rock", "Paper", "Scissors"]
     computer_choice = (random.choice(computer)).lower()
@@ -59,7 +60,9 @@ while True:
             print("You win!")
         else: 
             print("You lose")   
+    # Play game again?
     again = input("Play again? (Y/N): ")
+    player = input("Please select from the list: ").lower()
     if again.lower() != "y":
         break
 
