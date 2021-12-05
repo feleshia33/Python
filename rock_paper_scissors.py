@@ -35,7 +35,7 @@ while True:
         
 
 while True:
-
+    print("")
     # Computer choice
     computer = ["Rock", "Paper", "Scissors"]
     computer_choice = (random.choice(computer)).lower()
@@ -46,21 +46,27 @@ while True:
     # Determine winner
     if computer_choice == player:
         print("It's a tie!")
+        print("")
     elif computer_choice == "rock": 
         if player == "paper":
             print("You win!")
+            print("")
         else: 
-            print("You lose") 
+            print("You lose!") 
     elif computer_choice == "paper": 
         if player == "scissors":
             print("You win!")
+            print("")
         else: 
-            print("You lose") 
+            print("You lose!") 
+            print("")
     elif computer_choice == "scissors": 
         if player == "rock":
             print("You win!")
+            print("")
         else: 
-            print("You lose")   
+            print("You lose!")   
+            print("")
     
     # Play game again?
     again = input("Play again? (Y/N): ")
