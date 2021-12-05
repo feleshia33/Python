@@ -9,9 +9,9 @@ while True:
     print("")
 
     # Select player
-    print("Rock")
-    print("Paper")
-    print("Scissors")
+    print("1)Rock")
+    print("2)Paper")
+    print("3)Scissors")
     print("")
     player = input("Please select from the list: ").lower()
     print("")
@@ -35,6 +35,7 @@ while True:
         
 
 while True:
+
     # Computer choice
     computer = ["Rock", "Paper", "Scissors"]
     computer_choice = (random.choice(computer)).lower()
@@ -60,10 +61,12 @@ while True:
             print("You win!")
         else: 
             print("You lose")   
+    
     # Play game again?
     again = input("Play again? (Y/N): ")
-    player = input("Please select from the list: ").lower()
-    if again.lower() != "y":
+    if again == "y" or again == "Y" or again == "Yes" or again == "yes":
+        player = input("Please select from the list: ").lower()
+    elif again.lower() != "y":
         break
 
   
