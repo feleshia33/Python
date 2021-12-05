@@ -1,21 +1,22 @@
 import random
 
-# Display instructions
-print("")
-print("The rules of the game below:")
-print("Paper beats rock, rock beats scissors, scissors beats paper.")
-print("")
-
-# Select player
-print("Rock")
-print("Paper")
-print("Scissors")
-print("")
-player = input("Please select from the list: ").lower()
-print("")
-
-# Determine player
 while True:
+
+    # Display instructions
+    print("")
+    print("The rules of the game below:")
+    print("Paper beats rock, rock beats scissors, scissors beats paper.")
+    print("")
+
+    # Select player
+    print("Rock")
+    print("Paper")
+    print("Scissors")
+    print("")
+    player = input("Please select from the list: ").lower()
+    print("")
+
+    # Determine player
     if player == "1" or player == "Rock" or player == "rock":
         print("You have selected rock!")
         print("")
@@ -40,9 +41,7 @@ while True:
     print("Computer has choosen: " + computer_choice + "!")
     print("")
 
-    again = "Y"
-
-# Determine winner
+    # Determine winner
     if computer_choice == player:
         print("It's a tie!")
     elif computer_choice == "rock": 
@@ -60,12 +59,10 @@ while True:
             print("You win!")
         else: 
             print("You lose")   
+    again = input("Play again? (Y/N): ")
+    if again.lower() != "y":
+        break
 
-again = input("Play again? (Y/N): ")
-if again.lower() != "y":
-    break
-
-
-
-
-
+  
+    
+        
