@@ -4,30 +4,27 @@
 
  
 def main():
-
+    course Dic = {}
     roomsDic = {}
     instructorsDic = {}
     timesDic = {}
-    course = input('Enter a new course number of interest or press enter zero to stop: ')
  
-    while course != "0":
+    while True:
         #get course info
+        course = input('Enter a new course number of interest or press enter zero to stop: ')
         rooms = input('Enter the course meeting room: ')
         instructors = input('Enter course Instructor''s name: ' )
         times = input('Enter course meeting time: ')
         print("")
 
     #add course info to dictionaries
-        
-        roomsDic[course] = [rooms]
-        instructorsDic[course] = [instructors]
-        timesDic[course] = [times]
+        # courseDic[course] = [course]
+        # roomsDic[course] = [rooms]
+        # instructorsDic[course] = [instructors]
+        # timesDic[course] = [times]
 
     #used print to test the dictionaries
-        # print("Course Number(key)  || Room Number(value)")
-        for i in roomsDic:
-            print (i, roomsDic[i])
-
+        # print(courseDic)
         # print(roomsDic)
         # print(instructorsDic)
         # print(timesDic)
